@@ -6,7 +6,7 @@
  * -------------------------------------------------------------------------------------------
  */
 
-(function(app) {
+(function (app) {
 
   const namespace = 'validation';
 
@@ -19,7 +19,7 @@
   }
 
   function isTargetFieldType(type) {
-    return ['name', 'varchar', 'text', 'phone'].indexOf(type) > -1;
+    return ['name', 'varchar', 'phone'].indexOf(type) > -1;
   }
 
   app.augment(namespace, $.extend(true, app[namespace], {
